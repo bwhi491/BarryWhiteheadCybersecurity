@@ -1,0 +1,64 @@
+# Expertise page
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Deep specialization in AI security domains and emerging threat vectors</p>
+        
+        <div style="margin: 3rem 0;">
+            <h3 style="color: #1a1a2e; margin-bottom: 2rem; font-size: 2rem;">AI Security Domains</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Machine Learning Security</h4>
+                    <p>Model poisoning, adversarial examples, model extraction, membership inference attacks, and robust ML system design.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h4>Data Privacy & Protection</h4>
+                    <p>Differential privacy, federated learning security, synthetic data generation, and privacy-preserving ML techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h4>AI Infrastructure Security</h4>
+                    <p>Secure cloud ML platforms, containerized AI workloads, MLOps security, and AI edge device protection.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin: 3rem 0;">
+            <h3 style="color: #1a1a2e; margin-bottom: 2rem; font-size: 2rem;">Industry Applications</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-university"></i></div>
+                    <h4>Financial Services</h4>
+                    <p>AI fraud detection systems, algorithmic trading security, credit risk model protection, and regulatory compliance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Healthcare AI</h4>
+                    <p>Medical AI system security, HIPAA compliance for ML, diagnostic model protection, and patient data privacy.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-car"></i></div>
+                    <h4>Autonomous Systems</h4>
+                    <p>Autonomous vehicle security, drone AI protection, robotics system hardening, and safety-critical AI validation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin: 3rem 0;">
+            <h3 style="color: #1a1a2e; margin-bottom: 2rem; font-size: 2rem;">Certifications & Standards</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">CISSP Certified</div>
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">CEH Certified</div>
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">NIST AI Framework</div>
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">ISO 27001 Expert</div>
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">Security+ Certified</div>
+                <div class="security-badge" style="display: block; text-align: center; padding: 1rem;">AI Security Alliance</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

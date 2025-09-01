@@ -1,0 +1,109 @@
+# Contact page
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Secure Your AI Future</h2>
+        <p class="section-subtitle">Ready to protect your AI investments? Let's discuss your security requirements.</p>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h3>Request Security Consultation</h3>
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Primary Interest *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="ai-assessment">AI Security Assessment</option>
+                            <option value="infrastructure">Secure AI Infrastructure</option>
+                            <option value="governance">AI Governance & Compliance</option>
+                            <option value="threat-intel">AI Threat Intelligence</option>
+                            <option value="training">AI Security Training</option>
+                            <option value="incident-response">AI Incident Response</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Timeline</label>
+                        <select id="urgency" name="urgency">
+                            <option value="immediate">Immediate (Security Incident)</option>
+                            <option value="urgent">Urgent (Within 1 week)</option>
+                            <option value="standard">Standard (Within 1 month)</option>
+                            <option value="planning">Planning Phase (3+ months)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Please describe your AI systems, security concerns, and specific requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Request Consultation</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>secure@cybershield-ai.com</strong><br>
+                        <small>Encrypted communication available</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>+1 (555) CYBER-AI</strong><br>
+                        <small>24/7 Emergency Hotline</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Response Times:</strong><br>
+                        <small>Emergency: &lt;2 hours<br>
+                        Urgent: &lt;24 hours<br>
+                        Standard: &lt;48 hours</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <strong>Security Clearance:</strong><br>
+                        <small>Available for classified projects</small>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 2rem; color: #1a1a2e;">Why Choose CyberShield AI?</h3>
+                <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                    <li>🎖️ Military-grade security expertise</li>
+                    <li>🎓 Advanced cybersecurity education</li>
+                    <li>🛡️ AI-specific threat knowledge</li>
+                    <li>⚡ Rapid response capabilities</li>
+                    <li>🤝 Veteran-owned business</li>
+                    <li>📈 Proven track record</li>
+                </ul>
+                
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #e3f2fd; border-radius: 10px;">
+                    <h4 style="color: #1a1a2e; margin-bottom: 1rem;">🚨 Security Incident?</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.95rem;">If you're experiencing an active AI security incident, call our emergency hotline immediately.</p>
+                    <a href="tel:+15554237442" class="cta-button" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">Call Emergency Line</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

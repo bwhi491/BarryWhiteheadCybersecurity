@@ -1,0 +1,97 @@
+# Home page
+{% extends "base.html" %}
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content fade-in-up">
+        <div class="hero-subtitle">Elite AI Security Consultancy</div>
+        <h1>Protecting AI Systems from Emerging Threats</h1>
+        <p>Veteran-led cybersecurity expertise meets cutting-edge AI defense strategies. Safeguard your AI investments with military-grade security protocols and advanced threat intelligence.</p>
+        <div>
+            <a href="/contact" class="cta-button">Secure Your AI</a>
+            <a href="/expertise" class="cta-button cta-secondary">View Expertise</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">AI Security Services</h2>
+        <p class="section-subtitle">Comprehensive protection for your AI infrastructure, from development to deployment</p>
+        <div class="services-grid">
+            <div class="service-card fade-in-up">
+                <div class="service-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI Model Security Assessment</h3>
+                <p>Comprehensive evaluation of machine learning models for vulnerabilities, adversarial attacks, data poisoning, and model stealing threats.</p>
+                <div class="service-price">Starting at $5,000</div>
+            </div>
+            <div class="service-card fade-in-up">
+                <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>AI Infrastructure Hardening</h3>
+                <p>End-to-end security implementation for AI pipelines, including secure MLOps, container security, and cloud AI platform protection.</p>
+                <div class="service-price">Starting at $8,000</div>
+            </div>
+            <div class="service-card fade-in-up">
+                <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+                <h3>AI Governance & Compliance</h3>
+                <p>Establish AI ethics frameworks, regulatory compliance strategies, and risk management programs for responsible AI deployment.</p>
+                <div class="service-price">Starting at $6,500</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Military Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">MS</div>
+                <div class="stat-label">Cybersecurity Degree</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Client Success Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Threat Monitoring</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Credentials Preview -->
+<section class="section credentials">
+    <div class="container">
+        <h2 class="section-title">Trusted Expertise</h2>
+        <div class="credentials-grid">
+            <div class="credential-item">
+                <div class="credential-icon"><i class="fas fa-medal"></i></div>
+                <h4>Military Veteran</h4>
+                <p>Honorable service with security clearance experience</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h4>Advanced Education</h4>
+                <p>MS in Cybersecurity & Information Assurance</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon"><i class="fas fa-robot"></i></div>
+                <h4>AI Security Specialist</h4>
+                <p>Cutting-edge expertise in AI threat landscapes</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon"><i class="fas fa-certificate"></i></div>
+                <h4>Industry Certified</h4>
+                <p>CISSP, CEH, and AI Security certifications</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
