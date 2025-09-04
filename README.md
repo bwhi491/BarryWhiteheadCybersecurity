@@ -1,4 +1,4 @@
-# CyberShield AI Web Server
+# Barry Whitehead Cybersecurity Web Server
 
 This project is a simple, multi-page business website for a fictional AI security consultancy, "CyberShield AI," built using the Flask web framework. It is designed to run on a Raspberry Pi 5.
 
