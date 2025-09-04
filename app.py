@@ -16,28 +16,28 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html',
-                           business_name="CyberShield AI",
+                           business_name="Barry Whitehead Cybersecurity",
                            title="Home",
                            current_year=datetime.now().year)
 
 @app.route('/about')
 def about():
     return render_template('about.html',
-                           business_name="CyberShield AI",
+                           business_name="Barry Whitehead Cybersecurity",
                            title="About",
                            current_year=datetime.now().year)
 
 @app.route('/services')
 def services():
     return render_template('services.html',
-                           business_name="CyberShield AI",
+                           business_name="Barry Whitehead Cybersecurity",
                            title="Services",
                            current_year=datetime.now().year)
 
 @app.route('/expertise')
 def expertise():
     return render_template('expertise.html',
-                           business_name="CyberShield AI",
+                           business_name="Barry Whitehead Cybersecurity",
                            title="Expertise",
                            current_year=datetime.now().year)
 
@@ -89,7 +89,7 @@ def contact():
                                timestamp=int(datetime.now().timestamp()))
 
     return render_template('contact.html',
-                           business_name="CyberShield AI",
+                           business_name="Barry Whitehead Cybersecurity",
                            title="Contact",
                            current_year=datetime.now().year)
 
